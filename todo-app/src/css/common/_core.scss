@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../../static/fonts/NotoSansKR-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Noto Sans KR", "Inter", sans-serif;
+  font-weight: 400;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans KR", "Inter", sans-serif;
+  overflow: hidden;
+}
+h2,
+h3,
+h4 {
+  font-size: 3rem;
+  font-family: "Noto Sans KR", ui-sans-serif, "sans-serif";
+}
+p {
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* 중앙속박스 */
+.inbox {
+  /* 최대가로크기 */
+  max-width: 1750px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.main-area > div + div {
+  padding-top: 10rem;
+}
+.footer-area {
+  margin-top: 10rem;
+}
+
+/* 플렉스박스 클래스 */
+.fx-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* 파트박스 */
+.partbox {
+  /* 패딩,보더 포함박스 */
+  box-sizing: border-box;
+}
