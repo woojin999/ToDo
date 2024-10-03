@@ -5,7 +5,7 @@ function AddTodo(props) {
   const [contents, setContents] = useState("");
   const [id, setId] = useState("");
   const [data, setData] = useState([
-    // {id: 0, title:'포트폴리오', contents:'포트폴리오 완료하기', isComplete: false},
+    {id: 0, title:'포트폴리오', contents:'포트폴리오 완료하기', isComplete: false},
   ]);
 
   // 타이틀 변경
@@ -48,7 +48,7 @@ function AddTodo(props) {
   };
 
   return (
-    <>
+    <div className="todo-box">
       <div className="add-todo-area">
         <div className="todo-wrap">
           <label>
@@ -77,7 +77,7 @@ function AddTodo(props) {
         </button>
       </div>
       <List data={data} />
-    </>
+    </div>
   );
 }
 
