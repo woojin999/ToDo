@@ -73,7 +73,7 @@ function List({ data }) {
 
   return (
     <div className="todo-list">
-      <h3>앞으로 할 일</h3>
+      <h3>📋 앞으로 할 일 📋</h3>
       <ul className="working">
         {incompleteData.map((ele) => {
           return (
@@ -89,8 +89,8 @@ function List({ data }) {
           );
         })}
       </ul>
-      <h3>완료</h3>
-      <ul className="working">
+      <h3>⌛ 완료 ⌛</h3>
+      <ul className="working comple">
         {completeData.map((ele) => {
           return (
             <Item
